@@ -1,0 +1,8 @@
+# Inciso a. (a|b)* -> acepta cualquier cadena de a's y b's
+states: q0
+alphabet: a,b
+start: q0
+accept: q0
+transitions:
+q0,a->q0
+q0,b->q0
