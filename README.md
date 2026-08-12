@@ -16,12 +16,12 @@ Se muestra en consola la secuencia de movimientos de estado a estado, cuando se 
 Su resultado final es ACEPTADO o RECHAZADO.  
 
 Se basó en el ejercicio 3.16 del libro de Aho, para procesar la cadena **ababbab** 
-| Inciso a |    Expresión    |
-|   :---   |       :---:     |
-|     a    |     "(a|b)*"    |
-|     b    |    "(a*|b*)*"   |
-|     c    |  "((ε|a)b*)*"   |
-|     d    |"(b|b)*abb(a|b)*"|
+| Inciso | Expresión |
+| :---: | :--- |
+| a | `(a|b)*` |
+| b | `(a|b)*b` |
+| c | `((a|b)b)*` |
+| d | `(b|b)*abb(a|b)*` |
 
 ### Objetivos
   - Implementar un programa en Python capaz de leer la definición de cualquier AFD desde un archivo de configuración.
@@ -52,7 +52,7 @@ Se basó en el ejercicio 3.16 del libro de Aho, para procesar la cadena **ababba
 #### d. (b|b)*abb(a|b)*
   (b|b)* es equivalente a b* (unir b con b no agrega nada). El patrón real es: cero o más b, luego obligatoriamente abb, y después cualquiera. Este autómata sí es selectivo.
   - Diagrama:
-   <img width="555" height="221" alt="d" src="https://github.com/user-attachments/assets/a3390f6e-d737-4d71-a89d-a03b7787146a" />
+    <img width="555" height="221" alt="d" src="https://github.com/user-attachments/assets/a3390f6e-d737-4d71-a89d-a03b7787146a" />
   - Ejecución:
     <img width="633" height="654" alt="image" src="https://github.com/user-attachments/assets/3673e3a3-cc66-490b-b8f4-b913b505cbbb" />
 
