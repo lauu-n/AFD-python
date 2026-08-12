@@ -16,13 +16,9 @@ Se muestra en consola la secuencia de movimientos de estado a estado, cuando se 
 Su resultado final es ACEPTADO o RECHAZADO.  
 
 Se basó en el ejercicio 3.16 del libro de Aho, para procesar la cadena **ababbab** 
+<img width="707" height="227" alt="image" src="https://github.com/user-attachments/assets/635520b8-ff2c-4897-ad1e-794ffe81441d" />
 
-|    Inciso     |     Expresión      |
-| ------------- | ------------------ |
-|       a       |      `(a|b)*`      |
-|       b       |      `(a|b)*b`     |
-|       c       |     `((a|b)b)*`    |
-|       d       |  `(b|b)*abb(a|b)*` |
+
 
 ### Objetivos
   - Implementar un programa en Python capaz de leer la definición de cualquier AFD desde un archivo de configuración.
